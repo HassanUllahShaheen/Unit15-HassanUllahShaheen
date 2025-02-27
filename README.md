@@ -1,6 +1,6 @@
 # Unit15 assignment-HassanUllahShaheen
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
   <head>
 <link href="css/style.css" rel=" stylesheet">
  <script src="scripts/javascript.js"></script>
