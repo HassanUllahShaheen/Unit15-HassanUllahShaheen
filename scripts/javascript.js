@@ -1,1 +1,3 @@
-
+funtion sayHi() {
+  alert("Hi!");
+}
