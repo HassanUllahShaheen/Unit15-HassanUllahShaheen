@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title> 
+  <link href="css/style.css" rel="stylesheet">
+  <script src="scripts/javascript.js"></script> 
+</head>
+<body> 
+    
+  <!-- Header section with title and logo -->
+  <header>
+    <h1>Home Page</h1>
+    <img src="images/logo.png" alt="logo" class="logo"> <!-- Corrected 'src' attribute for image -->
+  </header>
+
+  <!-- Navigation menu -->
+  <nav>
+    <a href="#index">Home</a> 
+    <a href="pages/aboutus.html">About Us</a> 
+    <a href="pages/courses.html">Courses</a> 
+    <a href="pages/game.html">Games</a>     
+    <a href="pages/membership.html">Membership</a>
+    <a href="pages/contact.html">Contact</a>                               
+  </nav>
+
+  <!-- Main content area -->
+  <main class="mainpage">
+    <h2>Welcome to our website</h2>
+    <p>This is the main content area where information is displayed.</p>
+    
+    <!-- Section within the main content -->
+    <div class="section">
+      <section class="section">
+        <h3>Section 1</h3>
+        <p>Content for the first section.</p>
+      </section>  
+    </div>
+  </main> 
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Simple Layout. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
