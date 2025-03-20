@@ -1,0 +1,58 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #2a2a2a;
+  font-weight: bold;
+}
+
+/* Header Section */
+header {
+  background-color: #2d3a3a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation Menu */
+nav {
+  background-color: #333;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Main Content */
+main {
+  padding: 20px
