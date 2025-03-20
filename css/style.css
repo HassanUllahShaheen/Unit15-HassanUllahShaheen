@@ -1,6 +1,84 @@
-body{ 
-  background-color:black; 
-  color:white;
-  font-family :Arial,scans-serif; 
-  padding:20px;
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif; /* Corrected 'font-family' property */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Styling for the header */
+header {
+  display: flex; /* Using flexbox for layout */
+  justify-content: center; /* Aligns content horizontally in the center */
+  align-items: center; /* Aligns content vertically in the center */
+  padding: 20px;
+  background-color: #400; /* Dark red background */
+  border-bottom: 2px solid #ddd; /* Adds a light border below the header */
+}
+
+/* Styling for the logo */
+.logo {
+  max-width: 100px; /* Limits the size of the logo */
+}
+
+/* Styling for the navigation menu */
+nav {
+  background-color: #f4f4f4; /* Light gray background for nav */
+  padding: 10px;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: black; /* Black color for links */
+  text-decoration: none; /* Removes underline from links */
+  margin: 0 10px; /* Adds space between links */
+}
+
+/* Hover effect for links */
+nav a:hover {
+  text-decoration: underline; /* Underlines links on hover */
+}
+
+/* Main content styling */
+.mainpage {
+  background-color: white; /* Background color for the main content */
+  padding: 20px;
+}
+
+/* Styling for the content sections */
+.section {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  width: 100%;
+  max-width: 1000px; /* Limits the width of the section */
+  margin: 0 auto; /* Centers the section horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow around section */
+  border: 2px solid #2c3e50; /* Adds border with a color */
+}
+
+/* Styling for section headings */
+.section h3 {
+  color: #333; /* Dark text color for the heading */
+  font-size: 24px; /* Font size for the section title */
+}
+
+/* Styling for paragraphs inside content */
+.section p {
+  color: #666; /* Lighter text color */
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 80%; /* Limits the width of the paragraph */
+  margin: 0 auto; /* Centers the paragraph */
+}
+
+/* Footer styling */
+footer {
+  background-color: #400; /* Dark red background for the footer */
+  color: white; /* White text color */
+  padding: 10px;
+  position: fixed; /* Keeps footer at the bottom of the page */
+  width: 100%; /* Full width footer */
+  bottom: 0; /* Positioned at the bottom of the page */
 }
