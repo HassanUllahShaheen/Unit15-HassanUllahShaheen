@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header section with title and logo -->
+  <header>
+    <h1>Games</h1>
+    <img src="images/logo.png" alt="logo" class="logo">
+  </header>
+
+  <!-- Navigation menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="games.html">Games</a>
+    <a href="membership.html">Membership</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main content for games -->
+  <main>
+    <h2>Play and Support</h2>
+    <p>Enjoy playing games while supporting our cause! Each game you play helps raise awareness for our charity.</p>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Charity in Slovakia. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
