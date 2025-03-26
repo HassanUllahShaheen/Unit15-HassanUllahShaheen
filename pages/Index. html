@@ -12,7 +12,7 @@
   <!-- Header section with title and logo -->
   <header>
     <h1>Home Page</h1>
-    <img src="images/logo.png" alt="logo" class="logo"> <!-- Corrected 'src' attribute for image -->
+    <img src="images/logo.png" alt="logo" class="logo">
   </header>
 
   <!-- Navigation menu -->
@@ -25,24 +25,75 @@
     <a href="pages/contact.html">Contact</a>                               
   </nav>
 
+  <!-- Hero Section with Background Image -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Our Charity</h2>
+      <p>Making a difference, one step at a time.</p>
+    </div>
+  </section>
+
   <!-- Main content area -->
   <main class="mainpage">
-    <h2>Welcome to our website</h2>
-    <p>This is the main content area where information is displayed.</p>
+    <h2>About Our Mission</h2>
+    <p>We are dedicated to helping those in need through our various programs.</p>
     
     <!-- Section within the main content -->
     <div class="section">
-      <section class="section">
-        <h3>Section 1</h3>
-        <p>Content for the first section.</p>
+      <section>
+        <h3>Our Goals</h3>
+        <p>Providing resources and support for communities in need.</p>
       </section>  
     </div>
   </main> 
 
   <!-- Footer section -->
-  <footer>
-    <p>&copy; 2025 Simple Layout. All rights reserved.</p>
-  </footer>
+ <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Us -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>"Together, we change lives – every act of kindness counts."</p>
+            <p><strong>Contact:</strong> +421 XXX XXX XXX</p>
+            <p><strong>Email:</strong> <a href="mailto:help@charity.sk">help@charity.sk</a></p>
+            <p><strong>Address:</strong> 123 Street, City, Slovakia</p>
+        </div>
+
+        <!-- Support Us -->
+        <div class="footer-section">
+            <h3>Support Us</h3>
+            <p><a href="#">Donate Now</a></p>
+            <p><a href="#">Become a Volunteer</a></p>
+           
+        </div>
+
+        <!-- Useful Links -->
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Service</a></p>
+            <p><a href="#">Financial Reports</a></p>
+        </div>
+
+        <!-- Stay Connected -->
+        <div class="footer-section">
+            <h3>Stay Connected</h3>
+            <p>Follow us:
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">YouTube</a> |
+            </p>
+        </div>
+    </div>
+
+    <!-- Partners Section -->
+    <div class="footer-partners">
+        <h3>Our Partners</h3>
+        <p>(Add logos of supporting organizations here.)</p>
+    </div>
+</footer>
+
   
 </body>
 </html>
