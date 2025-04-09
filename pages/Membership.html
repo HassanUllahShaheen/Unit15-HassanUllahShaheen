@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Membership</title>
-<link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
- 
-  <!-- Header section with title and logo -->
-<header>
-<h1>Membership</h1>
-<img src="images/logo.png" alt="logo" class="logo">
-</header>
- 
-  <!-- Navigation menu -->
-<nav>
-<a href="index.html">Home</a>
-<a href="aboutus.html">About Us</a>
-<a href="courses.html">Courses</a>
-<a href="games.html">Games</a>
-<a href="membership.html">Membership</a>
-<a href="contact.html">Contact</a>
-</nav>
- 
-  <!-- Main content showing membership details -->
-<main>
-<h2>Become a Member</h2>
-<p>Join us in our mission to help others. Become a member today and enjoy exclusive benefits, such as early access to new courses and events.</p>
-</main>
- 
-  <!-- Footer section -->
-<footer>
-<p>&copy; 2025 Charity in Slovakia. All rights reserved.</p>
-</footer>
- 
+    <header>
+        <h3>Membership</h3>
+        <div class="logo">
+            <input type="file" accept="image/*">
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="courses.html">Fees & Dates</a>
+        <a href="game.html">Games</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h2>Join Our Community</h2>
+        <form id="membership-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required max="2005-12-31" title="You must be at least 18 years old to join.">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+
+            <label for="account">Account Number</label>
+            <input type="text" id="account" name="account" required pattern="\d{8,}" title="Account number must be at least 8 digits.">
+
+            <label for="sortcode">Sort Code</label>
+            <input type="text" id="sortcode" name="sortcode" required pattern="\d{6}" title="Sort code must be exactly 6 digits.">
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation" style="display:none;">🎉 Thank you for joining us! 🎉</div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>"Together, we change lives – every act of kindness counts."</p>
+                <p><strong>Contact:</strong> +421 XXX XXX XXX</p>
+                <p><strong>Email:</strong> <a href="mailto:help@charity.sk">help@charity.sk</a></p>
+                <p><strong>Address:</strong> 123 Street, City, Slovakia</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support Us</h3>
+                <p><a href="#">Donate Now</a></p>
+                <p><a href="#">Become a Volunteer</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">Financial Reports</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Stay Connected</h3>
+                <p>Follow us:
+                    <a href="#">Facebook</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">YouTube</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-partners">
+            <h3>Our Partners</h3>
+            <p>(Add logos of supporting organizations here.)</p>
+        </div>
+    </footer>
 </body>
 </html>
-
- 
