@@ -95,6 +95,14 @@
         }
 
         /* Courses Page */
+        .page {
+            display: none;
+        }
+        
+.page.active {
+            display: block;
+        }
+        
         table {
             width: 100%;
             border-collapse: collapse;
