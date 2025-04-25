@@ -99,7 +99,7 @@
             display: none;
         }
         
-.page.active {
+        .page.active {
             display: block;
         }
         
