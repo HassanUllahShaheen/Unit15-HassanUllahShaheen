@@ -1,25 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("membership-form");
-    const confirmation = document.getElementById("confirmation");
-
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Basic validation with HTML5 attributes (e.g., required, pattern, etc.)
-        if (form.checkValidity()) {
-            confirmation.style.display = "block";
-            confirmation.textContent = "🎉 Thank you for joining us! 🎉";
-
-            // Optionally clear form after submission
-            form.reset();
-
-            // Hide confirmation after 5 seconds (similar to Teams emoji feedback)
-            setTimeout(() => {
-                confirmation.style.display = "none";
-            }, 5000);
-        } else {
-            // If form is invalid, display a simple alert (or handle accordingly)
-            alert("Please fill in all fields correctly.");
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Deactivate all nav buttons
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Activate clicked button
+            event.currentTarget.classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
         }
-    });
-});
+
+        // Membership form handling
+        document.getElementById('membership-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('confirmation').style.display = 'block';
+            this.reset();
+            
+            setTimeout(() => {
+                document.getElementById('confirmation').style.display = 'none';
+            }, 5000);
+        });
