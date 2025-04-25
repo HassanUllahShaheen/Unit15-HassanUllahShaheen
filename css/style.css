@@ -93,6 +93,25 @@
             padding-bottom: 20px;
             border-bottom: 1px solid #eee;
         }
+        .video-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 315px;
+    display: block;
+}
+
 
         /* Courses Page */
         table {
