@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Slovenské Vzdelávacie Centrum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" alt="logo" class="logo">
+        <div class="header-title">Slovenské Vzdelávacie Centrum</div>
+    </header>
 
+    <nav>
+        <div class="nav-button" onclick="showPage('home')">Home</div>
+        <div class="nav-button" onclick="showPage('about')">About Us</div>
+        <div class="nav-button" onclick="showPage('courses')">Dates & Fees</div>
+        <div class="nav-button" onclick="showPage('games')">Games</div>
+        <div class="nav-button active" onclick="showPage('membership')">Membership</div>
+        <div class="nav-button" onclick="showPage('contact')">Contact</div>
+    </nav>
+
+    <!-- Membership Page -->
+    <div id="membership" class="page active">
+        <main>
+            <h2>Join Our Community</h2>
+            <form id="membership-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="account">Account Number</label>
+                <input type="text" id="account" name="account" required>
+
+                <label for="sortcode">Sort Code</label>
+                <input type="text" id="sortcode" name="sortcode" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="confirmation" style="display:none;">🎉 Thank you for joining us! 🎉</div>
+        </main>
+    </div>
+</body>
+</html>
