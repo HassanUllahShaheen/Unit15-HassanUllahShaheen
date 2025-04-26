@@ -265,3 +265,36 @@
                 flex-direction: column;
             }
         }
+
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--slovak-blue);
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        /* Responsive: Show burger on mobile */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .burger {
+                display: flex;
+            }
+        }
+
